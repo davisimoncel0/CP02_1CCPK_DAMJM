@@ -1,0 +1,36 @@
+{
+  "classificacao_sentimento": [
+    {
+      "input": "Adorei o produto, superou todas as expectativas!",
+      "output": "POSITIVO"
+    },
+    {
+      "input": "Péssimo atendimento, produto veio quebrado.",
+      "output": "NEGATIVO"
+    },
+    {
+      "input": "Bom preço, mas a qualidade deixa a desejar.",
+      "output": "MISTO"
+    }
+  ],
+  "extracao_dados_pedido": [
+    {
+      "input": "Meu Monitor LG Ultrawide de R$2.100,00 veio com tela riscada. Pedido #55123.",
+      "output": "{\"produto\": \"Monitor LG Ultrawide\", \"preco\": \"R$2.100,00\", \"problema\": \"tela riscada\", \"pedido\": \"#55123\"}"
+    },
+    {
+      "input": "O Teclado Mecânico Redragon de R$350,00 tem teclas que não respondem. Pedido #67890.",
+      "output": "{\"produto\": \"Teclado Mecânico Redragon\", \"preco\": \"R$350,00\", \"problema\": \"teclas que não respondem\", \"pedido\": \"#67890\"}"
+    }
+  ],
+  "sumarizacao_review": [
+    {
+      "input": "Comprei essa mochila para notebook de 15 polegadas. O material é impermeável e muito resistente. Tem vários compartimentos organizadores que cabem carregador, mouse e fone. As alças são acolchoadas e confortáveis para carregar o dia todo. Porém, o zíper principal travou depois de um mês de uso e o bolso lateral é pequeno demais para garrafa de água. Custou R$189 e no geral atende bem quem precisa de uma mochila para trabalho.",
+      "output": "Mochila para notebook 15\" com material impermeável e resistente. Múltiplos compartimentos, alças confortáveis. Problemas: zíper travou após 1 mês, bolso lateral pequeno. Adequada para trabalho por R$189."
+    },
+    {
+      "input": "Mouse gamer com sensor de 16000 DPI. A precisão é incrível para jogos FPS e o design ergonômico permite jogar por horas sem cansaço. Os botões laterais são programáveis pelo software da marca. A iluminação RGB é bonita mas o software é pesado e instável. O cabo poderia ser mais flexível. Por R$250, é uma ótima opção para gamers casuais e competitivos.",
+      "output": "Mouse gamer 16000 DPI com alta precisão para FPS, design ergonômico e botões programáveis. RGB atrativo, mas software pesado/instável. Cabo pouco flexível. Bom custo-benefício por R$250 para gamers."
+    }
+  ]
+}

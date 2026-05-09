@@ -1,0 +1,29 @@
+{
+  "base": {
+    "template": "### Instrução\n{instrucao}\n\n### Contexto\n{contexto}\n\n### Dados de Entrada\n{input}\n\n### Formato de Saída\n{formato}",
+    "descricao": "Template base com separação clara entre instrução, contexto, dados e formato esperado."
+  },
+  "few_shot": {
+    "template": "### Instrução\n{instrucao}\n\n### Exemplos\n{exemplos}\n\n### Dados de Entrada\n{input}\n\n### Formato de Saída\n{formato}",
+    "descricao": "Template com seção de exemplos para aprendizado in-context."
+  },
+  "chain_of_thought": {
+    "template": "### Instrução\n{instrucao}\n\n### Passos de Raciocínio\nAnalise passo a passo:\n{passos}\n\n### Dados de Entrada\n{input}\n\n### Formato de Saída\n{formato}",
+    "descricao": "Template com raciocínio explícito passo a passo antes da resposta final."
+  },
+  "classificacao_sentimento": {
+    "contexto": "Você está analisando reviews de clientes de um e-commerce brasileiro. Os clientes escrevem suas opiniões sobre produtos comprados online.",
+    "instrucao_padrao": "Classifique o sentimento da review do cliente.",
+    "formato_padrao": "Responda APENAS com uma das seguintes classificações: POSITIVO, NEGATIVO, NEUTRO ou MISTO"
+  },
+  "extracao_dados_pedido": {
+    "contexto": "Você está processando mensagens de reclamação de clientes de um e-commerce. Cada mensagem contém informações sobre um pedido com problema.",
+    "instrucao_padrao": "Extraia as informações estruturadas da reclamação do cliente.",
+    "formato_padrao": "Responda APENAS com um JSON válido contendo os campos: produto, preco, problema, pedido"
+  },
+  "sumarizacao_review": {
+    "contexto": "Você está processando reviews detalhadas de produtos de um e-commerce brasileiro para criar resumos executivos para o time de produto.",
+    "instrucao_padrao": "Crie um resumo executivo conciso da review do produto.",
+    "formato_padrao": "Responda com um resumo de 2-3 frases cobrindo: pontos positivos, pontos negativos e avaliação geral de custo-benefício"
+  }
+}

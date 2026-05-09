@@ -1,0 +1,101 @@
+{
+  "classificacao_sentimento": [
+    {
+      "input": "Produto excelente! Chegou antes do prazo e a qualidade superou minhas expectativas. Recomendo demais!",
+      "esperado": "POSITIVO"
+    },
+    {
+      "input": "Péssima experiência. O produto veio com defeito e o atendimento ao cliente foi horrível. Nunca mais compro aqui.",
+      "esperado": "NEGATIVO"
+    },
+    {
+      "input": "O produto é ok, nada de especial. O preço é bom mas a qualidade poderia ser melhor. Entrega dentro do prazo.",
+      "esperado": "MISTO"
+    },
+    {
+      "input": "Recebi o pedido ontem. É um fone de ouvido bluetooth modelo XR-200.",
+      "esperado": "NEUTRO"
+    },
+    {
+      "input": "Adorei a embalagem e o design do produto, mas infelizmente parou de funcionar depois de uma semana de uso. Muito decepcionada.",
+      "esperado": "MISTO"
+    },
+    {
+      "input": "Comprei para dar de presente e a pessoa amou! Material resistente, acabamento perfeito e chegou muito bem embalado.",
+      "esperado": "POSITIVO"
+    },
+    {
+      "input": "Produto não corresponde à descrição do anúncio. As fotos mostram um material completamente diferente do que recebi. Quero reembolso.",
+      "esperado": "NEGATIVO"
+    }
+  ],
+  "extracao_dados_pedido": [
+    {
+      "input": "Comprei um Notebook Dell Inspiron 15 por R$3.500,00 e veio com pixels mortos na tela. Pedido #45821.",
+      "esperado": {
+        "produto": "Notebook Dell Inspiron 15",
+        "preco": "R$3.500,00",
+        "problema": "pixels mortos na tela",
+        "pedido": "#45821"
+      }
+    },
+    {
+      "input": "Meu iPhone 14 Pro de R$7.299,00 chegou com a tela trincada. Número do pedido: #78234.",
+      "esperado": {
+        "produto": "iPhone 14 Pro",
+        "preco": "R$7.299,00",
+        "problema": "tela trincada",
+        "pedido": "#78234"
+      }
+    },
+    {
+      "input": "A Smart TV Samsung 55 polegadas que comprei por R$2.800,00 não liga. Pedido #12093.",
+      "esperado": {
+        "produto": "Smart TV Samsung 55 polegadas",
+        "preco": "R$2.800,00",
+        "problema": "não liga",
+        "pedido": "#12093"
+      }
+    },
+    {
+      "input": "Recebi o Fone JBL Tune 510BT de R$199,90 e o lado esquerdo não funciona. Meu pedido é o #33456.",
+      "esperado": {
+        "produto": "Fone JBL Tune 510BT",
+        "preco": "R$199,90",
+        "problema": "lado esquerdo não funciona",
+        "pedido": "#33456"
+      }
+    },
+    {
+      "input": "A Cadeira Gamer ThunderX3 de R$1.450,00 veio com o encosto quebrado. Pedido #90812.",
+      "esperado": {
+        "produto": "Cadeira Gamer ThunderX3",
+        "preco": "R$1.450,00",
+        "problema": "encosto quebrado",
+        "pedido": "#90812"
+      }
+    }
+  ],
+  "sumarizacao_review": [
+    {
+      "input": "Comprei este aspirador robô há três meses e estou muito satisfeito. A navegação por laser mapeia a casa inteira perfeitamente, ele desvia dos obstáculos sem problemas e a sucção é potente o suficiente para pegar pelos de animais. A bateria dura cerca de 2 horas, o que é suficiente para limpar meu apartamento de 80m² inteiro. O aplicativo funciona bem e permite agendar limpezas. O único ponto negativo é que o reservatório de poeira é pequeno e precisa ser esvaziado frequentemente. No geral, vale muito o investimento de R$2.500.",
+      "esperado": "Aspirador robô com navegação a laser eficiente, boa sucção para pelos de animais, bateria de 2h para 80m². App funcional. Ponto negativo: reservatório pequeno. Custo-benefício positivo por R$2.500."
+    },
+    {
+      "input": "Essa cafeteira expresso foi a pior compra que fiz este ano. Primeiro, a embalagem veio amassada. Quando consegui montar, o manual de instruções era todo em inglês sem tradução para português. A primeira vez que usei, o café saiu aguado e sem cremosidade nenhuma. Tentei ajustar a moagem mas o moedor trava constantemente. Depois de duas semanas, começou a vazar água pela parte de baixo. Entrei em contato com o SAC e depois de 40 minutos de espera, me disseram que não tinham peças de reposição. Muito frustrado com a marca.",
+      "esperado": "Cafeteira expresso com múltiplos problemas: embalagem danificada, manual só em inglês, café sem qualidade, moedor com travamento, vazamento após 2 semanas. SAC ineficiente sem peças de reposição. Experiência extremamente negativa."
+    },
+    {
+      "input": "Comprei o smartwatch para monitorar meus treinos de corrida. O GPS é bastante preciso e o monitor cardíaco funciona bem durante exercícios. A tela AMOLED é linda e fácil de ler mesmo sob sol forte. Por outro lado, a bateria que prometiam durar 7 dias mal chega a 3 com o GPS ativo. As notificações do WhatsApp às vezes atrasam e o app de acompanhamento poderia ser mais intuitivo. Para o preço de R$899, esperava algo mais polido no software, mas o hardware é sólido.",
+      "esperado": "Smartwatch com GPS preciso e bom monitor cardíaco para corrida. Tela AMOLED excelente. Pontos negativos: bateria dura 3 dias (prometiam 7), notificações com atraso, app pouco intuitivo. Hardware bom, software precisa melhorar. Preço R$899."
+    },
+    {
+      "input": "Tablet para uso escolar do meu filho de 10 anos. A tela de 10 polegadas tem boa resolução para assistir videoaulas e o armazenamento de 64GB é suficiente para os apps educativos que ele usa. O modo infantil com controle parental é muito bem feito e me dá tranquilidade. A câmera é bem fraca mas para esse uso não importa. O processador é básico e trava um pouco com jogos mais pesados, mas para estudo funciona perfeitamente. A capa protetora que vem junto é resistente e já salvou de várias quedas.",
+      "esperado": "Tablet 10 polegadas bom para uso escolar infantil. Resolução adequada para videoaulas, 64GB suficientes, controle parental eficiente. Câmera fraca e processador básico (trava em jogos pesados), mas adequado para estudo. Capa protetora resistente inclusa."
+    },
+    {
+      "input": "Fone de ouvido over-ear com cancelamento de ruído. O ANC é impressionante, bloqueia completamente o barulho do escritório e do transporte público. O som é equilibrado com graves potentes sem distorção. Muito confortável para uso prolongado, as almofadas são macias e não esquentam. A conexão Bluetooth é estável e a bateria dura 30 horas facilmente. O microfone para chamadas é razoável, pessoas reclamam de eco às vezes. O estojo de transporte é premium. Pelo preço de R$1.200, é a melhor escolha nessa faixa.",
+      "esperado": "Fone over-ear com ANC excelente para escritório e transporte. Som equilibrado, confortável para uso prolongado, Bluetooth estável, bateria de 30h. Microfone razoável com eco ocasional. Estojo premium incluso. Melhor custo-benefício na faixa de R$1.200."
+    }
+  ]
+}
